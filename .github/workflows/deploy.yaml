@@ -27,7 +27,7 @@ jobs:
         run: bun install
 
       - name: Build
-        run: bun run build --base /${{github.event.repository.name}}/llm-gateway-research/
+        run: bun run build --base /${{github.event.repository.name}}/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
