@@ -13,15 +13,9 @@ mdc: true
 duration: 45min
 ---
 
-# การวิจัยตลาด LLM Gateway
+# LLM Gateway Market 2026
 
-## โอกาสทางธุรกิจและแนวโน้มปี 2026
-
-<div class="abs-br m-6 flex gap-2">
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn" title="GitHub">
-    <carbon:logo-github />
-  </a>
-</div>
+## ตัวกลางที่ขาดไม่ได้ (The New Standard)
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
@@ -29,884 +23,447 @@ duration: 45min
   </span>
 </div>
 
-<!--
-สไลด์เปิด - แนะนำหัวข้อการวิจัย
--->
+---
+
+# Part 1: ส่องตลาด (Industry Overview)
 
 ---
 
-# Part 1: Industry Overview
+# LLM Gateway Market 2026
 
-_ปูพื้นฐาน: เรากำลังดูอะไรอยู่ และทำไมมันถึงสำคัญ?_
+## ตัวกลางที่ขาดไม่ได้ (The New Standard)
 
----
+**Industry Name:** AI Infrastructure (LLM Gateway / Proxy)
 
-# LLM Gateway คืออะไร?
-
-<div grid="~ cols-2 gap-8" mt-4">
-<div>
-
-## Definition
-
-**Industry Name:** AI Infrastructure / LLM Gateway
-
-**Status:** กำลังเข้าสู่ยุคที่ 2 (Gen 2: Smart Orchestration)
-
-- **คำนิยาม:** "คนกลาง" (Proxy) อัจฉริยะที่คั่นอยู่ระหว่าง Application กับผู้ให้บริการโมเดล
-
-- **ความสามารถหลัก (Payload-aware):**
-    - "อ่านและเข้าใจ" Prompt และ Token
-    - ปรับเปลี่ยนเส้นทางได้ทันที
-
-- **ขอบเขต:**
-    - ✅ ใช่: Routing, Caching, Governance
-    - ❌ ไม่ใช่: Agent Framework หรือ Model Marketplace
-
-</div>
-
-<div>
-
-## 💡 Concept Explained
-
-**API Gateway ปกติ**
-
-> เหมือน "ไปรษณีย์" ที่ส่งจดหมายตามจ่าหน้าซอง โดยไม่สนใจข้างใน
-
-**LLM Gateway**
-
-> เหมือน "เลขาฯ ส่วนตัว" ที่เปิดอ่านจดหมาย
->
-> - เรื่องด่วน → ส่งเจ้านาย A
-> - เรื่องตลก → ส่งเจ้านาย B
-> - ช่วยตรวจคำผิดก่อนส่ง
-
-</div>
-</div>
-
-<!--
-อธิบายความหมายของ LLM Gateway พร้อมเปรียบเทียบกับ API Gateway ทั่วไป
--->
-
----
-
-# ภูมิทัศน์ของตลาด
-
-## Market Taxonomy: 4 ประเภทผู้เล่นในตลาด
-
-<div grid="~ cols-2 gap-6" mt-6>
-
-<div>
-
-### 1️⃣ The Aggregators (SaaS)
+**Status:** ปี 2026 ไม่มีใครยิง API ตรงไปหา OpenAI/Anthropic แล้ว
 
 <v-click>
 
-เน้นรวมทุกค่ายไว้ที่เดียว (One Key fits all)
-
-_ตัวอย่าง:_ OpenRouter, Naga.ai
+**Selected Subvertical:** <span v-mark.yellow.highlight>"Smart Routing or Prompt-Aware Gateways", "Performance" & "Unified API"</span>
 
 </v-click>
 
-### 2️⃣ The Polyglot Adapters (OSS)
+<v-clicks>
+
+**Why This Matters?**
+
+- คุมยาก: เรื่องเงิน ความปลอดภัย และความเร็ว
+- Gateway ทั่วไปทำได้แค่ส่งข้อมูล แต่เราต้องการตัวที่ "อ่าน Prompt ออก"
+
+**Stakeholders**
+
+- User: Dev / Platform Engineer
+- Buyer: CTO / CFO (ที่อยากลดบิลค่า AI)
+
+</v-clicks>
+
+---
+
+# Inference Graphs
+
+## เมื่อ Gateway ไม่ใช่แค่ทางผ่าน 
 
 <v-click>
 
-เน้นแปลงภาษาให้คุยกันรู้เรื่อง (Compatibility)
-
-_ตัวอย่าง:_ LiteLLM (Python), Bifrost (Go)
+แทนที่จะยิง A to B จบไป แต่มันคือการวาง Logic ต่อกันเหมือน Flowchart ภายใน Gateway
 
 </v-click>
 
-</div>
-
-<div>
-
-### 3️⃣ The Control Planes (Enterprise)
-
-<v-click>
-
-เน้นการคุมกฎและหน้าบ้านสวยงาม (Governance & UI)
-
-_ตัวอย่าง:_ Portkey, Cloudflare AI Gateway
-
-</v-click>
-
-### 4️⃣ <span v-mark.red.circle>The Inference Orchestrators (Gen 2)</span>
-
-<v-click>
-
-เน้นการประมวลผล Logic ที่ซับซ้อน (Smart Pipes)
-
-**สมรภูมิใหม่!** ← นี่คือจุดน่าสนใจ
-
-_ตัวอย่าง:_ TensorZero (Rust), Plano
-
-</v-click>
-
-</div>
-
-</div>
-
-<!--
-แบ่งประเภทผู้เล่นในตลาด โดยเน้นว่า Gen 2 คือสมรภูมิใหม่
--->
-
----
-
-# ปัญหาและผู้ใช้งาน
-
-## Pain Points & Stakeholders
-
-<div grid="~ cols-2 gap-8" mt-4>
-
-<div>
-
-## Key Stakeholders
-
 <v-clicks>
 
-### 👨‍💻 Developers
+#### Example Flow
 
-- ต้องการความเร็ว (Low Latency)
-- ความง่ายในการสลับโมเดล
+1. Node 1: ใช้ Model เล็ก เช็คก่อนว่าคำถามเกี่ยวกับอะไร
+2. Node 2: ถ้าเป็นเรื่องยาก ส่งไป GPT-5 ถ้าเรื่องง่าย ส่งไปโมเดลถูกๆ
+3. Node 3: เอาคำตอบมาผ่าน Guardrail เช็คความถูกต้อง
+4. Fallback: ถ้า Node 2a ตาย ให้ยิงไป Claude sonnet แทนอัตโนมัติ
 
-### 👔 CTO/Finance
+#### Benefits
 
-- คุม Cost ไม่ให้บานปลาย
-- ป้องกัน Vendor Lock-in
-
-### 🛡️ Security
-
-- กรองข้อมูลรั่วไหล (PII)
-- ป้องกันก่อนส่งออกไปข้างนอก
+- ระบบไม่ล่ม (Resilient) - มี Fallback อัตโนมัติ
+- ประหยัดเงินได้มหาศาล - เลือกโมเดลที่เหมาะสมกับงาน
+- ความยืดหยุ่น - เปลี่ยน Logic ได้โดยไม่ต้องแก้ Code
 
 </v-clicks>
 
-</div>
+---
 
-<div>
+# Pain Points ที่เจอในตลาดตอนนี้
 
-## Major Pain Points
+## ปัญหาที่ทำให้คนปวดหัว
 
 <v-clicks>
 
-### ⚠️ Reliability
+### 🐌 Latency Tax
 
-โมเดลล่มบ่อย → ต้องมี <span v-mark.underline>ระบบ Fallback อัตโนมัติ</span>
+พวก Gateway ที่เขียนด้วย Python/Node มัน<span v-mark.underline.red>ช้าเกินไป</span>สำหรับงาน Real-time
 
-### 🌀 Chaos
+### 🔥 The "JSON Break"
 
-ต่างทีมต่างใช้ API Key มั่วซั่ว → ไม่มีศูนย์กลาง
+โมเดลฉลาดแค่ไหน บางทีก็ส่ง Format เพี้ยน ทำเอา App พัง
 
-### 🐌 Performance
+### 🔒 Privacy Fear
 
-Gateway เดิมๆ (Python) → เริ่มช้าเมื่อเจอ Traffic มหาศาล
+ไม่อยากให้ Log วิ่งผ่าน Cloud ของคนอื่น อยากรันเองในเครื่อง/On-prem
+
+### 📈 Adoption Stage
+
+ตอนนี้อยู่ในช่วง Growing คนเริ่มรู้แล้วว่าต้องมี แต่ยังหาตัวที่ "ใช้ง่ายและเร็ว" จริงๆ ไม่เจอ
 
 </v-clicks>
 
-</div>
+---
 
-</div>
-
-<!--
-สรุปปัญหาหลักและผู้มีส่วนได้ส่วนเสีย
--->
+# Part 2: สิ่งที่ค้นพบ (Insights)
 
 ---
 
-# Part 2: Key Findings
+# 3 Case หลักที่คนเอาไปใช้จริง
 
-_เจาะลึก: สิ่งที่ค้นพบจากการวิจัย และช่องว่างในตลาด_
-
----
-
-# Use Cases ยอดนิยม
-
-## Top 3 AI Use Cases
-
-<div grid="~ cols-3 gap-4" mt-6>
-
-<div v-click="1" class="p-4 border rounded-lg">
-
-### 💰 1. Cost Optimization via Routing
-
-ฉลาดเลือกโมเดล:
-
-- คำถามง่าย → GPT-4o mini (ถูก)
-- คำถามยาก → GPT-4o (แพง)
-
-<span class="text-sm opacity-75">User ไม่รู้ตัว!</span>
-
-</div>
-
-<div v-click="2" class="p-4 border rounded-lg">
-
-### 🛡️ 2. Guardrails & Security
-
-- การป้องกันข้อมูลรั่วไหล (Data Masking)
-- การป้องกัน Prompt Injection
-- กรอง PII ก่อนส่งออก
-
-</div>
-
-<div v-click="3" class="p-4 border rounded-lg">
-
-### ⚡ 3. Semantic Caching
-
-ถ้ามีคนถามคำถามที่มี "ความหมาย" เหมือนเดิม
-
-→ ตอบจาก Cache ทันที
-
-<span class="text-sm opacity-75">ประหยัดเงินและเร็วมาก!</span>
-
-</div>
-
-</div>
-
-<v-click="4">
-
-<div class="mt-8 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
-
-### 💡 Concept Explained: Semantic Cache
-
-ไม่ใช่แค่การเทียบตัวอักษรเป๊ะๆ (Exact Match)
-
-แต่คือ<span v-mark.underline>การเข้าใจบริบท</span>
-
-เช่น:
-
-- "หวัดดี" ≈ "สวัสดีครับ" → เรื่องเดียวกัน!
-- ระบบดึงคำตอบเดิมมาตอบได้เลย
-
-</div>
-
-</v-click>
-
-<!--
-อธิบาย Use Case ยอดนิยม 3 อัน พร้อมเจาะลึก Semantic Cache
--->
-
----
-
-# โอกาสทางธุรกิจ
-
-## The Opportunity (2026)
-
-<div class="text-center text-2xl font-bold mb-6" v-click="1">
-<span v-mark.red.underline>The Rust-based, Local-First Gateway</span>
-</div>
-
-<div grid="~ cols-2 gap-8" mt-4>
-
-<div>
-
-## 😰 ปัญหาของคู่แข่ง
+## ไม่ใช่แค่ Proxy แต่คือ AI Controller
 
 <v-clicks>
 
-**LiteLLM (Python)**
+### 💾 1. Semantic Caching
 
-- ช้าเกินไปสำหรับงาน Scale ใหญ่
-- ไม่มี UI ในตัว
+ถามซ้ำไม่ต้องยิงใหม่ Gateway จำคำตอบที่ "ความหมายเหมือนกัน" ไว้ให้เลย
 
-**TensorZero (Rust)**
+<span class="text-green-600 font-bold">ลดบิลได้ 30-50%</span>
 
-- ซับซ้อนเกินไป
-- ต้องรื้อระบบใหม่ (High Friction)
+### 🛡️ 2. Output Guardrailing
 
-**Portkey**
+เช็คคำตอบก่อนส่งถึงมือ User ถ้า AI ตอบมั่วหรือ Format ผิด Gateway แก้ให้เลย
 
-- ดีแต่ต้องพึ่งพา SaaS Cloud
-- ไม่ Private 100%
+### ⚡ 3. Local-First / Edge
 
-</v-clicks>
+รัน Gateway ไว้ใกล้ตัวที่สุด (เช่นใน Edge หรือ Laptop) เพื่อลดความหน่วง
 
-</div>
+### 💡 Surprising Insight
 
-<div>
-
-## 🎯 โอกาสของเรา
-
-<v-clicks>
-
-### Winning Wedge
-
-สร้าง **"The Caddy of AI Gateways"**
-
-### จุดขาย
-
-- ✅ เป็นไฟล์เดียว (Single Binary)
-- ✅ เขียนด้วย Rust (เร็ว)
-- ✅ มี UI ในตัว (ไม่ต้องต่อเน็ต)
-- ✅ ใช้ง่ายเหมือน Caddy Web Server
+คนเริ่มเบื่อการจ่ายเงินแบบ Aggregator (OpenRouter) และอยากใช้ Key ตัวเอง (<span v-mark.yellow.highlight>BYOK</span>) เพราะการ subscribe มันดูคุ้มกว่าการเติม credit
 
 </v-clicks>
-
-</div>
-
-</div>
-
-<!--
-เจาะจงโอกาสทางธุรกิจ - Rust-based Local-First Gateway
--->
 
 ---
 
-# ข้อมูลเชิงลึกที่น่าตกใจ
+# โอกาสของ Rust Gateway
 
-## Surprising Insights
+## The "Caddy" of AI
 
-<div grid="~ cols-3 gap-4" mt-6>
+<v-clicks>
 
-<div v-click="1" class="p-4 border-2 border-red-300 rounded-lg bg-red-50">
+### 😰 ปัญหาของคู่แข่ง
 
-### 🔥 Schema คือ WAF ตัวใหม่
+**TensorZero/Plano** - เก่งเทพนะ แต่วุ่นวาย Setup ยากเหมือนต้องรื้อบ้านใหม่
 
-ความปลอดภัยที่สำคัญที่สุด:
+**LiteLLM** - ต่อได้ทุกโมเดลจริง แต่ช้าและกิน Resource
 
-<span v-mark.underline.red>ไม่ใช่แค่กันคนแฮก</span>
+### 🎯 โอกาสของเรา
 
-แต่คือการกัน AI "หลอน" จนส่ง JSON พังๆ กลับมา
+**Winning Wedge** - เราต้องเป็น "Single Binary" ไฟล์เดียวจบ รันปุ๊บได้ปั๊บ (DX เหนือกว่า)
 
-→ **Structured Output Validation**
+**API First** - มี API ให้ครบสำหรับ admin และ user ทำให้องค์กรณ์สามารถสร้าง Custom UI ของตัวเองแล้วนำมา plug เข้ากับระบบได้ง่าย
 
-</div>
+**Extendable** - ขยายความสามารถได้ด้วย Wasm Plugins (อยากได้ Logic อะไรเพิ่ม เขียนปลั๊กอินมาเสียบเอา)
 
-<div v-click="2" class="p-4 border-2 border-orange-300 rounded-lg bg-orange-50">
-
-### 🦀 Rust กำลังกินตลาด
-
-Gateway ยุคใหม่เปลี่ยนจาก Python/Node → Rust/Go เกือบหมด
-
-เพื่อรองรับ Token Streaming ที่ระดับ <span v-mark.circle.orange>Millisecond</span>
-
-</div>
-
-<div v-click="3" class="p-4 border-2 border-yellow-300 rounded-lg bg-yellow-50">
-
-### 🔄 Proxy ธรรมดาไม่พอแล้ว
-
-ตลาดต้องการ **"Inference Graph"**
-
-ใส่ Logic เข้าไปในการเรียก:
-
-- ลองเรียก A ก่อน
-- ถ้าไม่มั่นใจ → เรียก B
-- เอาผลมาสรุปด้วย C
-
-</div>
-
-</div>
-
-<!--
-สรุป Insight ที่น่าสนใจ 3 ข้อ
--->
+</v-clicks>
 
 ---
 
 # Part 3: Research Workflow
 
-_เบื้องหลัง: กระบวนการทำงานระหว่างคนกับ AI_
-
 ---
 
-# Step 1 - Market Mapping
-
-## 🤖 AI Driven
-
-<div grid="~ cols-2 gap-8" mt-4>
-
-<div>
-
-### เป้าหมาย
-
-กวาดตามองหาผู้เล่นในตลาด
-
-### Tools
-
-<div class="p-4 bg-gray-100 rounded">
-- Perplexity
-- Google Search
-- AI Search Engines
-</div>
-
-</div>
-
-<div>
-
-### Action Process
+## เป้าหมาย
 
 <v-clicks>
 
-1. ใช้ AI ค้นหา:
-    - "Open source LLM Gateway 2025-2026"
-    - "Rust based AI Proxy"
+เน้นสปีด! เพื่อให้เห็นภาพรวมของตลาด Gateway ทั้งหมดภายก่อน
 
-2. **AI Role:**
-    - ช่วยลิสต์รายชื่อโปรเจกต์ใหม่ๆ
-    - ที่เราอาจไม่รู้จัก
-    - เช่น _Plano_ หรือ _Bifrost_
+### Process
 
-3. **ผลลัพธ์:**
-    - ได้รายชื่อดิบ (Raw List)
-    - มาจัดหมวดหมู่
+1. **Decide Industry** - เราเริ่มจากมองหา AI/LLM Gateway ที่กำลังมาแรงในปี 2026
+
+2. **Subcategories** - พอดีตรงนี้มี partner หลายๆคนถามถึงเรื่องนี้อยู่ตลอด
+
+3. **Pick a Startup** - เราจิ้มไปที่ LiteLLM (ตัวดัง) แล้วกางแผนที่หาคู่แข่งทันที
+
+4. **Identify Pain** - เจอจุดตายคือ "คนต้องมานั่งเขียน Logic เช็ค JSON เองซ้ำๆ" บางครั้งมี latency เยอะ รับใช้งานพร้อมๆกันแล้วมีปัญหา หรือการ setup ยุ่งยากก็มีส่วน
 
 </v-clicks>
 
-</div>
-
-</div>
-
-<!--
-อธิบายขั้นตอนแรก - Market Mapping ด้วย AI
--->
-
 ---
 
-# Step 2 - Deep Dive & Verification
+# โชว์ Prompt ที่ใช้ปั้น Research นี้ขึ้นมา
 
-## 👨‍💻 Manual Heavy
-
-<div grid="~ cols-2 gap-8" mt-4">
-
-<div>
-
-### เป้าหมาย
-
-ตรวจสอบความจริงทางเทคนิค
-
-### Tools
-
-<div class="p-4 bg-gray-100 rounded">
-- **GitHub** (Manual Reading)
-- Source Code Analysis
-- Issue Tracker Review
-</div>
-
-</div>
-
-<div>
-
-### Action Process
+## ใช้ AI ยังไงให้ได้ "เนื้อ" ไม่ได้ "น้ำ"
 
 <v-clicks>
 
-1. **อ่าน Code:**
-    - `Cargo.toml` → ดู dependencies
-    - หนักแค่ไหน?
-
-2. **อ่าน Issues:**
-    - คนบ่นเรื่องอะไร?
-    - Bug ซ้ำๆ คืออะไร?
-
-3. **ดู Commit History:**
-    - โปรเจกต์ตายหรือยัง?
-    - Last commit นานแค่ไหน?
-
-</v-clicks>
-
-<v-click="4">
-
-### ⚠️ ทำไมต้องใช้คน?
-
-AI มักจะอ่านแค่ **README** (ซึ่งเป็นการตลาด)
-
-แต่คนต้องเข้าไปดู **"ความจริง"** ใน Code
-
-</v-click>
-
-</div>
-
-</div>
-
-<!--
-อธิบายขั้นตอนที่สอง - Deep Dive ด้วยการอ่าน GitHub เอง
--->
-
----
-
-# Step 3 - Synthesis & Strategy
-
-## 🤝 Hybrid Approach
-
-<div grid="~ cols-2 gap-8" mt-4>
-
-<div>
-
-### เป้าหมาย
-
-วิเคราะห์หาจุดยืน (Positioning)
-
-### Tools
-
-<div class="p-4 bg-gray-100 rounded">
-- **ChatGPT** (as sparring partner)
-- SWOT Analysis
-- Feature Comparison Matrix
-</div>
-
-</div>
-
-<div>
-
-### Action Process
-
-<v-clicks>
-
-1. **ป้อนข้อมูลดิบ:**
-    - ข้อมูลที่คัดกรองแล้ว
-    - ใส่ลงไปใน AI
-
-2. **สั่งให้ AI วิเคราะห์:**
-    - SWOT Analysis
-    - เปรียบเทียบฟีเจอร์แบบตาราง
-    - หาจุดแข็ง/จุดอ่อน
-
-3. **Human Role:**
-    - ตัดสินใจเลือก "Winning Wedge"
-    - สู้ที่ความง่าย หรือ ความเร็ว?
-    - AI ตัดสินใจทิศทางธุรกิจแทนไม่ได้!
-
-</v-clicks>
-
-</div>
-
-</div>
-
-<!--
-อธิบายขั้นตอนที่สาม - Synthesis ร่วมกับ AI
--->
-
----
-
-# Part 4: AI Limitation & Human Judgment
-
-_จุดบอด: ตรงไหนที่ AI พลาดและต้องใช้คน_
-
----
-
-# ความผิดพลาดของ AI
-
-## Hallucination: Feature Confusion
-
-<div grid="~ cols-2 gap-8" mt-4>
-
-<div class="p-4 bg-red-50 border-l-4 border-red-500">
-
-### ❌ สิ่งที่ AI บอก
-
-> "LiteLLM เขียนด้วย <span v-mark.red.strike>Rust</span> และมีประสิทธิภาพสูง"
-
-</div>
-
-<div v-click="1" class="p-4 bg-green-50 border-l-4 border-green-500">
-
-### ✅ ความจริง
-
-> LiteLLM เขียนด้วย **Python** 100%
-
-</div>
-
-</div>
-
-<v-clicks>
-
-### 🤔 ทำไม AI ถึงพลาด?
-
-- จำสลับกับโปรเจกต์อื่น
-- มั่วข้อมูลเพราะเห็นคำว่า "High Performance" ในโฆษณา
-- Training data ล้าสมัย
-
-### 💥 ผลกระทบ
-
-ถ้าเชื่อ AI → วางแผนผิดพลาดเรื่อง Tech Stack ทันที!
-
-</v-clicks>
-
-<!--
-ตัวอย่าง AI Hallucination - สับสนระหว่างโปรเจกต์
--->
-
----
-
-# สิ่งที่ต้องตรวจสอบเอง
-
-## Manual Verification: License & Pricing
-
-<div grid="~ cols-2 gap-8" mt-4">
-
-<div>
-
-### ⚠️ สิ่งที่ AI มักพลาด
-
-<v-clicks>
-
-**รายละเอียดของ License:**
-
-- AI บอก "Open Source"
-- จริงๆ เป็น "Source Available"
-- ห้ามนำไปทำ SaaS แข่ง!
-
-**Pricing Gates:**
-
-- ฟีเจอร์ SSO ต้องจ่ายเงินเพิ่ม
-- Enterprise Gate ที่ซ่อนอยู่
-
-</v-clicks>
-
-</div>
-
-<div>
-
-### 🔍 ทำไม AI พลาด?
-
-<v-clicks>
-
-ข้อมูลพวกนี้มักซ่อนอยู่:
-
-- ในไฟล์ License เล็กๆ
-- หน้า Pricing ที่ซับซ้อน
-- ไม่ใช่หน้าแรกที่ AI อ่าน
-
-### ✅ Solution
-
-คนต้องเข้าไปอ่าน:
-
-- `LICENSE` file
-- `PRICING.md`
-- Terms of Service
-
-</v-clicks>
-
-</div>
-
-</div>
-
-<!--
-อธิบายว่าทำไมต้องตรวจสอบ License เอง
--->
-
----
-
-# เรื่องของ "ความรู้สึก"
-
-## Nuance & Vibe: Developer Experience (DX)
-
-<div grid="~ cols-2 gap-8" mt-4>
-
-<div>
-
-### 🤖 สิ่งที่ AI ไม่เข้าใจ
-
-**"ความรู้สึกตอนใช้งาน"** (Friction)
-
-<v-click>
-
-ตัวอย่าง:
-
-- AI บอกว่า TensorZero ติดตั้งง่ายเพราะมี Docker
-- แต่ความจริง = Config File เขียนยากมาก
-- ต้องเข้าใจ Concept Graph theory
-
-</v-click>
-
-</div>
-
-<div>
-
-### 👨‍💻 Human Insight
-
-<v-clicks>
-
-**คนเท่านั้นที่รู้:**
-
-"Easy to install" ≠ "Easy to use"
-
-<v-click>
-
-### 📊 Metrics ที่ AI วัดไม่ได้
-
-- Time to first "Hello World"
-- Number of config files
-- Cognitive load ตอน setup
-- "Gotcha" moments ที่ซ่อนอยู่
-
-</v-click>
-
-</v-clicks>
-
-</div>
-
-</div>
-
-<!--
-อธิบายว่าทำไมความรู้สึกตอนใช้งานสำคัญ - สิ่งที่ AIไม่เข้าใจ
--->
-
----
-
-# Part 5: Research Tips & Prompt
-
-_บทเรียน: เคล็ดลับเพื่อการวิจัยที่ดีกว่าเดิม_
-
----
-
-# Prompt ที่ทรงพลัง
-
-## Effective Prompt: Context Setting
-
-<div class="p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border-2 border-blue-200">
-
-### 🎯 เทคนิค: การกำหนดบริบทเวลาในอนาคต
+### Prompt Template
 
 ```markdown
-กำหนดให้ **วันที่ปัจจุบันคือ: 22 กุมภาพันธ์ 2026**
-
-ให้วิเคราะห์ในฐานะ Principal Product Strategist
-โดยให้ความสำคัญกับข้อมูลย้อนหลังไม่เกิน 6 เดือน...
+You are an AI Product Strategist...
+perform an Industry Spike Analysis...
+Identify real-world LLM Gateway opportunities...
 ```
 
-</div>
+### วิธีการ
 
-<v-clicks>
+เราใช้ Prompt นี้ยิงใส่ AI เพื่อให้มันช่วย Map Sub-Sector ออกมาเป็น 4 กลุ่ม: Aggregators, Adapters, Control Planes, Orchestrators
 
-### ✨ Why it works?
+### ผลลัพธ์
 
-1. **ลด Legacy Info**
-    - บังคับไม่ให้ดึงข้อมูลเก่ามาตอบ
-    - บังคับมองหา Trend ล่าสุด
-
-2. **Role Clarity**
-    - กำหนดบทบาทที่ชัดเจน
-    - "Principal Product Strategist" vs "Generic AI"
-
-3. **Time Awareness**
-    - การหลอกให้ AI คิดว่าอยู่ในอนาคต
-    - ช่วยกรองข้อมูลที่ล้าสมัย
+ทำให้เราเห็น **"Market Gap"** ทันทีว่าคนส่วนใหญ่ยังแก้ปัญหาเรื่อง <span v-mark.underline.red>"Decision translation"</span> (การเอาผลลัพธ์ AI มาใช้งานต่อ) ได้ไม่ดีพอ
 
 </v-clicks>
 
-<!--
-สอนเทคนิคการเขียน Prompt ที่ดี
--->
-
 ---
 
-# เคล็ดลับการวิจัย
+# เมื่อเริ่มจริงจัง
 
-## "GitHub สำคัญกว่า Google"
-
-<div grid="~ cols-2 gap-8" mt-4">
-
-<div>
-
-### ❌ ปัญหาของ Google
+## Hybrid Mode (AI + Manual)
 
 <v-clicks>
 
-ในโลก Developer Tools:
+### Step 1: Map the Industry
 
+วิเคราะห์ว่าใครเป็นคนจ่าย?
+- User: Dev ที่เหนื่อยกับการต่อ API
+- Buyer: CFO ที่เห็นบิลค่า Token แล้วอยากจะร้องไห้
+
+### Step 2: Competitive Teardown
+
+ทำ PM Info Pack ชำแหละคู่แข่งรายตัว - TensorZero, Portkey, Cloudflare
+
+### Step 3: Analyze MOAT
+
+ดูว่าใครมี "กำแพง" ตรงไหน?
+- Portkey มี UI สวย (Dashboard)
+- TensorZero มีความเร็ว (Rust)
+
+</v-clicks>
+
+---
+
+# การหา Gap และจุดตาย
+
+## Gap Analysis
+
+<v-clicks>
+
+### วิธีการ
+
+**Missing Features** - เราลองใช้ AI ช่วยหาว่า "เครื่องมือที่มีอยู่ ขาดอะไร?"
+
+**Poor UX** - AI ชี้เป้าว่าพวก Rust Gateway ตอนนี้ใช้ยากเกินไปสำหรับมือใหม่
+
+### Manual Recheck
+
+ผมไม่ได้เชื่อ AI ทั้งหมด! ผมเข้าไปขุดใน GitHub Issues ของ LiteLLM และ Portkey เพื่อดูว่า User บ่นเรื่องอะไรจริงๆ
+
+### Finding
+
+พบว่า "ความเสถียรของ Output" (Reliability) คือปัญหาที่คนยอมจ่ายเงินแก้ที่สุด
+
+</v-clicks>
+
+---
+
+# สรุปผลลัพธ์
+
+## จาก Raw Data สู่ MVP Strategy
+
+<v-clicks>
+
+<span class="text-2xl font-bold"><span v-mark.red.underline>AI Builder MVP Opportunity</span></span>
+
+### จากกระบวนการทั้งหมด
+
+เราสรุปออกมาได้เป็น **"The Caddy of AI Gateways"**
+
+### Design Concept
+
+เป็น AI Agent ในตัวที่แปลง **[Raw Prompt]** ไปเป็น **[Actionable JSON]** โดยใช้ Rust เพื่อความไว
+
+### Tagline
+
+<div class="p-4 bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg text-center text-xl font-bold my-4">
+
+"From Raw Input to Real-World Outcome"
+
+</div>
+
+### หัวใจสำคัญ
+
+กระบวนการนี้เน้น **Speed of Learning** เราไม่ได้ต้องการความเป๊ะตั้งแต่แรก แต่เราต้องการ "Wedge" ที่จะเข้าไปเจาะตลาดได้จริง!
+
+</v-clicks>
+
+---
+
+# Part 4: ข้อจำกัดของ AI และการตัดสินใจ
+
+---
+
+# จุดที่ AI พาหลงทาง
+
+## Hallucinations
+
+<v-clicks>
+
+### ความผิดพลาด
+
+AI บอกว่าตัวนั้นตัวนี้ทำ <span v-mark.red.strike>"Native Semantic Caching"</span> ได้แล้ว
+
+### ความจริง
+
+พอไปเช็คใน Code จริงๆ ฟีเจอร์นั้นยังอยู่ใน Roadmap หรือต้องต่อ External DB วุ่นวาย
+
+### ต้องเช็คซ้ำ
+
+ต้องไปไล่ดู CHANGELOG.md หรือหน้า Pull Requests ใน GitHub ถึงจะรู้ว่ามัน "มีจริง" หรือแค่ "โม้ไว้ก่อน"
+
+</v-clicks>
+
+---
+
+# เรื่องของ "ความรู้สึก" และ "วัฒนธรรมองค์กร"
+
+## สิ่งที่ AI คำนวณไม่ได้
+
+<v-clicks>
+
+### 🤖 AI Analysis
+
+AI อาจจะบอกว่า "Cloud-based" ดีที่สุดเพราะ:
+- สเกลง่าย
+- ดูแลรักษาไม่ยาก
+- เข้าถึงได้จากทุกที่
+
+### 👨‍💻 Human Judgment
+
+แต่มนุษย์รู้ว่า: องค์กรไทยหรือธนาคารมี "กำแพงความกลัว" เรื่องข้อมูลหลุด
+
+ดังนั้น Gateway แบบ **Local/Self-hosted** ถึงจะขายออก
+
+### 💡 Lesson
+
+เราเลือกเน้น **Privacy-First** เพราะเข้าใจ Stakeholder Incentives มากกว่า AI
+
+</v-clicks>
+
+---
+
+# การก้าวข้ามข้อมูลที่ล้าสมัย
+
+## AI ไม่รู้หรอกว่าวันนี้ Dev เปลี่ยนใจแล้ว
+
+<v-clicks>
+
+### 📚 AI Recommendation
+
+AI มักจะแนะนำ Library เก่าๆ ที่คนใช้เยอะ เช่น: **LiteLLM** (Python-based)
+
+เพราะ Training data มันเห็นว่าคนใช้เยอะในอดีต
+
+### 🚀 การตัดสินใจของเรา
+
+เราเลือกแทงข้าง **Rust (TensorZero/Plano)**
+
+เพราะเห็นแนวโน้มความต้องการเรื่อง <span v-mark.underline>Low-latency</span> ที่พุ่งสูงขึ้นในปี 2026
+
+</v-clicks>
+
+---
+
+# Part 5: เคล็ดลับการวิจัย (Tips & Prompts)
+
+---
+
+# Prompt ที่ใช้แล้วเวิร์กจริง
+
+## Effective Prompt
+
+<v-clicks>
+
+### 🎯 อยากได้เนื้อๆ ไม่เอาต้นไม้
+
+```markdown
+สวมบทเป็น Principal Product Strategist
+เปรียบเทียบ [A] กับ [B]
+เอาเฉพาะจุดต่าง (Differentiators) กับจุดอ่อนพอ
+ฟีเจอร์พื้นฐานไม่ต้องพูดถึง
+แล้วขอที่มา (Citations) จาก GitHub หรือ Docs จริงๆ ด้วย
+```
+
+### ✨ ผลลัพธ์
+
+ลดเวลาอ่าน Marketing BS ไปได้ 80% ได้แต่เนื้อที่ต้องใช้ตัดสินใจจริงๆ
+
+</v-clicks>
+
+---
+
+# เคล็ดลับ "GitHub over Google"
+
+## แหล่งข้อมูลที่จริงใจที่สุด
+
+<v-clicks>
+
+### ❌ Google Search
+
+ในโลก Developer Tools:
 - ข้อมูลใน Google = SEO ขยะ
 - Tutorial เก่า
 - Blog post ที่ไม่อัปเดต
 
 <span class="text-red-500">→ Misleading Information!</span>
 
-</v-clicks>
-
-</div>
-
-<div>
-
 ### ✅ GitHub คือแหล่งความจริง
 
-<v-clicks>
+| ที่ | บอกอะไร? |
+|---|---|
+| README | สิ่งที่ผู้สร้าง เคลม |
+| Issues | จุดตาย ที่หน้าเว็บไม่บอก |
+| Discussion | คนบ่นเรื่องอะไร ตรงไหนพัง |
+| Pull Requests | ฟีเจอร์ไหนที่เขาอยากได้ |
 
-| ที่               | บอกอะไร?                             |
-| ----------------- | ------------------------------------ |
-| **README**        | สิ่งที่ผู้สร้าง _เคลม_               |
-| **Releases/Tags** | สิ่งที่ _มีอยู่จริง_ + ความถี่อัปเดต |
-| **Issues**        | _จุดตาย_ ที่หน้าเว็บไม่บอก           |
-| **Pull Requests** | _อนาคต_ ฟีเจอร์อะไรกำลังจะมา         |
+### 💡 Action
+
+ให้ไปดูหน้า Issues กับ Discussion ใน GitHub เพื่อดูว่าคนบ่นอะไร ตรงไหนพัง ฟีเจอร์ไหนที่เขาอยากได้แต่เจ้าของยังไม่ทำ นั่นแหละคือ **Opportunity** ของเรา
 
 </v-clicks>
-
-</div>
-
-</div>
-
-<v-click="3">
-
-<div class="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-500">
-
-### 💡 Pro Tip
-
-สังเกต **Issue Response Time**
-
-- ถ้า Issue ทิ้งไว้เดือนๆ → Project ตายแล้ว
-- ถ้ามี PR รอ merge เยอะ → Maintainer ไม่ active
-
-</div>
-
-</v-click>
-
-<!--
-เคล็ดลับว่าทำไม GitHub สำคัญกว่า Google สำหรับ Dev Tools
--->
 
 ---
 
-# สิ่งที่ต้องปรับปรุง
+# สิ่งที่ต้องแก้ตัวครั้งหน้า
 
-## Next Time Improvement
-
-<div grid="~ cols-2 gap-8" mt-4">
-
-<div>
-
-### 🚨 Problem
+## Improvement
 
 <v-clicks>
 
-AI ชอบอนุมานว่า:
+### 🚨 Lesson Learned
 
-- เครื่องมือยอดฮิตในอดีต (เช่น Python proxies)
-- ยังคงเป็นมาตรฐาน
+เวลาทำ Research เรื่องที่ขยับเร็วๆ (อย่าง AI 2026) ต้องย้ำ AI เสมอว่า
 
-→ ทำให้เราอาจหลงไปแข่งกับเทคโนโลยีที่กำลังจะตกรุ่น
+**"เอาข้อมูล 6 เดือนล่าสุดเท่านั้น"**
 
-</v-clicks>
+เพื่อกันไม่ให้มันไปขุดเอา "ความรู้คลาสสิก" ที่ตอนนี้เขาไม่ทำกันแล้ว (เช่น การรัน Proxy ด้วย Python ในงาน High-scale) มาตอบเรา
 
-</div>
+### ✅ Best Practice
 
-<div>
+**Explicit Time Constraints:**
 
-### ✅ Solution
-
-<v-clicks>
-
-**ในการวิจัยครั้งหน้า ต้องสั่งให้ AI:**
-
-1. ระบุเลยว่าข้อมูลชุดไหนเก่ากว่า 6 เดือน
-    - ติดป้าย **[Possibly Outdated]**
+1. ระบุเลยว่าข้อมูลชุดไหนเก่ากว่า 6 เดือน - ติดป้าย [Possibly Outdated]
 
 2. ให้คะแนนน้ำหนัก:
-    - โปรเจกต์ที่มี Activity ในรอบ 30 วัน
-    - มีน้ำหนัก > โปรเจกต์ตาย
+   - โปรเจกต์ที่มี Activity ในรอบ 30 วัน
+   - มีน้ำหนัก > โปรเจกต์ตาย
 
-3. Impact:
-    - ไม่หลงทางไปแข่งกับคู่แข่งที่กำลังจะตาย
-    - ไม่ใช้เทคโนโลยีที่กำลังจะตกรุ่น
+3. Impact: ไม่หลงทางไปแข่งกับเทคโนโลยีที่กำลังจะตกรุ่น
 
 </v-clicks>
-
-</div>
-
-</div>
-
-<!--
-บทสรุป - สิ่งที่จะปรับปรุงในการวิจัยครั้งหน้า
--->
 
 ---
 
@@ -937,7 +494,3 @@ Questions? Discussion?
 </div>
 
 </div>
-
-<!--
-สไลด์ปิดท้าย
--->
