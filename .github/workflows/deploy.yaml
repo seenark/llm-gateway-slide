@@ -21,18 +21,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "lts/*"
-
-      - name: Setup @antfu/ni
-        run: npm i -g @antfu/ni
+      - uses: oven-sh/setup-bun@v2
 
       - name: Install dependencies
-        run: nci
+        run: bun install
 
       - name: Build
-        run: nr build --base /${{github.event.repository.name}}/llm-gateway-research/
+        run: bun run build --base /${{github.event.repository.name}}/llm-gateway-research/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
